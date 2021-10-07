@@ -38,6 +38,7 @@ class BuilderA implements Builder {
   public buildProduct(): MainProduct {
     const result = this.product;
     this.reset();
+
     return result;
   }
 }

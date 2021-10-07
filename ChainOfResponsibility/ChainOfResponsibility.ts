@@ -28,11 +28,7 @@ class MonkeyHandler extends BaseHandler {
     }
 
     super.operation(request);
-  }if r.handler != nil {
-		return nil, fmt.Println("Processing payment")
-	}
-
-	return nil, ""
+  }
 }
 
 class DogHandler extends BaseHandler {

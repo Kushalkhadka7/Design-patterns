@@ -3,15 +3,15 @@ package main
 import "fmt"
 
 type IGun interface {
-	setName(name string)
+	getPower() int
 	getName() string
 	setPower(power int)
-	getPower() int
+	setName(name string)
 }
 
 type gun struct {
-	name  string
 	power int
+	name  string
 }
 
 func (g *gun) setName(name string) {

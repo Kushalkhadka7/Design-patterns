@@ -7,9 +7,9 @@ type IListener interface {
 }
 
 type IPublisher interface {
+	notify()
 	subscribe(listener IListener)
 	unSubscribe(listener IListener)
-	notify()
 }
 
 // Publisher.
